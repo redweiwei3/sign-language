@@ -1,0 +1,230 @@
+<html lang="en"><head>
+      <meta charset="utf-8">
+    <title>Sign Language Converter(ASL) | Convert Text to Sign language</title>
+    <link id="theme-style" rel="stylesheet" href="https://signconverter.com/style/light.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script type="application/ld+json">
+    {
+        "@context": "http://www.schema.org",
+        "@type": "WebSite",
+        "name": "Sign Converter",
+        "alternateName": "Sign Language Converter",
+        "url": "https://signconverter.com/"
+    }
+    </script>
+    
+        <script type="application/ld+json">
+        {
+         "@context": "https://schema.org",
+         "@type": "BreadcrumbList",
+         "itemListElement":
+         [
+          {
+           "@type": "ListItem",
+           "position": 1,
+           "item":
+           {
+            "@id": "https://signconverter.com/",
+            "name": "Home"
+            }
+          }
+         ]
+        }
+        </script>
+        <body aria-hidden="false" style="">
+          <nav class="navbar bsb-navbar bsb-navbar-caret bg-white-bg">
+       <div class="container position-relative justify-content-center">
+          
+        <div style="height: 57px"></div>
+          <div class="position-absolute end-0 d-flex align-items-center">
+             <button id="toggle-theme">
+                <span id="toggle-theme-icon"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.88 122.88"><title>Day mood</title><path d="M30,13.21A3.93,3.93,0,1,1,36.8,9.27L41.86,18A3.94,3.94,0,1,1,35.05,22L30,13.21Zm31.45,13A35.23,35.23,0,1,1,36.52,36.52,35.13,35.13,0,0,1,61.44,26.2ZM58.31,4A3.95,3.95,0,1,1,66.2,4V14.06a3.95,3.95,0,1,1-7.89,0V4ZM87.49,10.1A3.93,3.93,0,1,1,94.3,14l-5.06,8.76a3.93,3.93,0,1,1-6.81-3.92l5.06-8.75ZM109.67,30a3.93,3.93,0,1,1,3.94,6.81l-8.75,5.06a3.94,3.94,0,1,1-4-6.81L109.67,30Zm9.26,28.32a3.95,3.95,0,1,1,0,7.89H108.82a3.95,3.95,0,1,1,0-7.89Zm-6.15,29.18a3.93,3.93,0,1,1-3.91,6.81l-8.76-5.06A3.93,3.93,0,1,1,104,82.43l8.75,5.06ZM92.89,109.67a3.93,3.93,0,1,1-6.81,3.94L81,104.86a3.94,3.94,0,0,1,6.81-4l5.06,8.76Zm-28.32,9.26a3.95,3.95,0,1,1-7.89,0V108.82a3.95,3.95,0,1,1,7.89,0v10.11Zm-29.18-6.15a3.93,3.93,0,0,1-6.81-3.91l5.06-8.76A3.93,3.93,0,1,1,40.45,104l-5.06,8.75ZM13.21,92.89a3.93,3.93,0,1,1-3.94-6.81L18,81A3.94,3.94,0,1,1,22,87.83l-8.76,5.06ZM4,64.57a3.95,3.95,0,1,1,0-7.89H14.06a3.95,3.95,0,1,1,0,7.89ZM10.1,35.39A3.93,3.93,0,1,1,14,28.58l8.76,5.06a3.93,3.93,0,1,1-3.92,6.81L10.1,35.39Z"></path></svg></span>
+             </button>
+          </div>
+          <button class="navbar-toggler border-0 position-absolute start-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"></path>
+             </svg>
+          </button>
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+             <div class="offcanvas-header">
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close" data-dismiss="modal"></button>
+             </div>
+            
+             
+          </div>
+       </div>
+    </nav>      <div class="container mt-2" style="height: auto !important;">
+       <div class="row" align="center">
+          <h1 class="mt-3 pb-2 text-center" itemprop="headline">Sign Language Converter (ASL)</h1>
+          <p class="p-0 text-center">Use our simple <strong>Sign Language Converter (ASL)</strong> to translate English alphabets and numbers into <a href="">sign language</a>. You can also use our exclusive voice-to-sign feature and download options.</p>
+       </div>
+       <br>
+       <div class="row main-raw-display">
+          <div class="col-md-12 col-12 pd-m-zero" align="left">
+             <label for="alphabetSelect" class="spl-text-white form-label">Enter Text</label>
+             <input type="text" id="textInput" class="form-control form-control-lg mb-2" placeholder="Type text here...">
+          </div>
+          <div class="row justify-content-center">
+             <div class="col-md-8 col-12 mt-1 pd-m-zero" align="center">
+                <button id="startSpeech" class="btn btn-primary mt-2">Text to sign language</button>
+                             <button id="downloadBtn" class="btn btn-success mt-2">Send translation</button>
+                             <a href="c:\Users\ELCOT\Desktop\send\index.html">send</a>
+             </div>
+            
+          <div class="row justify-content-center">
+             <div id="signOutput" class="row g-3 justify-content-center mb-4"></div>
+          </div>
+       </div>
+    
+       <br>
+    </div><br> 
+        <script>
+    const textInput = document.getElementById('textInput');
+    const outputDiv = document.getElementById('signOutput');
+    const speakTextButton = document.getElementById('speakText');
+    
+    speechButton.addEventListener('click', function() {
+        if (!('webkitSpeechRecognition' in window)) {
+            alert('Speech Recognition API not supported in this browser.');
+            return;
+        }
+    
+        const recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
+        recognition.lang = 'en-US';
+        recognition.start();
+    
+        recognition.onresult = function(event) {
+            const transcript = event.results[0][0].transcript.toLowerCase().trim();
+            textInput.value = transcript;
+            displaySignLanguage(transcript);
+        };
+    
+        recognition.onerror = function(event) {
+            console.error('Speech recognition error:', event.error);
+        };
+    });
+    
+    textInput.addEventListener('input', function() {
+        const inputText = this.value.toLowerCase().trim();
+        displaySignLanguage(inputText);
+    });
+    
+    speakTextButton.addEventListener('click', function() {
+        if (!('speechSynthesis' in window)) {
+            alert('Speech Synthesis API not supported in this browser.');
+            return;
+        }
+    
+        const utterance = new SpeechSynthesisUtterance(textInput.value);
+        window.speechSynthesis.speak(utterance);
+    });
+    
+    function displaySignLanguage(text) {
+        outputDiv.innerHTML = '';
+    
+        const words = text.split(/\s+/);
+    
+        for (let word of words) {
+            if (word) {
+                const wordBox = document.createElement('div');
+                wordBox.className = 'auto-widht p-1 border text-center';
+    
+                const wordTitle = document.createElement('h5');
+                wordTitle.className = 'mb-1 text-show';
+                wordTitle.textContent = word.toUpperCase();
+    
+                const imageContainer = document.createElement('div');
+                imageContainer.className = 'd-flex justify-content-center flex-wrap';
+    
+                for (let char of word) {
+                    let imgSrc = '';
+                    
+    
+    if (char >= 'a' && char <= 'z') {
+        imgSrc = `https://signconverter.com/assets/asl-version/${char}.jpg`;
+    } else if (char >= '0' && char <= '9') {
+        imgSrc = `https://signconverter.com/assets/asl-version/${char}.jpg`;
+    }
+                    
+    
+                    if (imgSrc) {
+                        const img = document.createElement('img');
+                        img.src = imgSrc;
+                        img.alt = char;
+                        img.className = 'img-fluid m-1';
+                        img.style.width = '50px';
+                        imageContainer.appendChild(img);
+                    }
+                }
+    
+                wordBox.appendChild(wordTitle);
+                wordBox.appendChild(imageContainer);
+                outputDiv.appendChild(wordBox);
+            }
+        }
+    }
+     </script>
+    
+    <ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" style="display: none !important;" data-ad-status="unfilled"><div id="aswift_0_host" style="border: none; height: 0px; width: 0px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block;"><iframe id="aswift_0" name="aswift_0" browsingtopics="true" style="left:0;position:absolute;top:0;border:0;width:undefinedpx;height:undefinedpx;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allow="attribution-reporting; run-ad-auction" src="https://googleads.g.doubleclick.net/pagead/ads?client=ca-pub-7657112474730173&amp;output=html&amp;adk=1812271804&amp;adf=3025194257&amp;abgtt=6&amp;lmt=1737891901&amp;plat=1%3A1024%2C2%3A16778240%2C3%3A2097152%2C4%3A2097152%2C9%3A134250504%2C16%3A8388608%2C17%3A32%2C24%3A32%2C25%3A32%2C30%3A1081344%2C32%3A32%2C41%3A32%2C42%3A32&amp;format=0x0&amp;url=https%3A%2F%2Fsignconverter.com%2F&amp;pra=5&amp;wgl=1&amp;aihb=0&amp;asro=0&amp;ailel=1~2~4~6~7~8~9~10~11~12~13~14~15~16~17~18~19~20~21~24~29~30~34&amp;aiael=1~2~3~4~6~7~8~9~10~11~12~13~14~15~16~17~18~19~20~21~24~29~30~34&amp;aicel=33~38&amp;aifxl=29_18~30_19&amp;aiixl=29_5~30_6&amp;aiict=1&amp;itsi=19&amp;aiapm=0.15&amp;aiapmi=0.33938&amp;aief=1&amp;uach=WyJXaW5kb3dzIiwiNy4wLjAiLCJ4ODYiLCIiLCIxMzEuMC42Nzc4LjI2NSIsbnVsbCwwLG51bGwsIjY0IixbWyJHb29nbGUgQ2hyb21lIiwiMTMxLjAuNjc3OC4yNjUiXSxbIkNocm9taXVtIiwiMTMxLjAuNjc3OC4yNjUiXSxbIk5vdF9BIEJyYW5kIiwiMjQuMC4wLjAiXV0sMF0.&amp;dt=1737891900346&amp;bpp=58&amp;bdt=1167&amp;idt=728&amp;shv=r20250121&amp;mjsv=m202501210101&amp;ptt=9&amp;saldr=aa&amp;abxe=1&amp;cookie=ID%3D648af5cee85260e7%3AT%3D1737646099%3ART%3D1737890165%3AS%3DALNI_MZMnpeLgWPSE833ZrXru4EPT83N0g&amp;gpic=UID%3D000010093197d4e6%3AT%3D1737646099%3ART%3D1737890165%3AS%3DALNI_MavjXDqz3s7xueVm3L15aYfm300LQ&amp;eo_id_str=ID%3D816beefe02cb04ee%3AT%3D1737646099%3ART%3D1737890166%3AS%3DAA-AfjYzaqp0ycEyq7cIORAfPT3D&amp;nras=1&amp;correlator=3700064175725&amp;frm=20&amp;pv=2&amp;u_tz=330&amp;u_his=3&amp;u_h=768&amp;u_w=1366&amp;u_ah=728&amp;u_aw=1366&amp;u_cd=24&amp;u_sd=1&amp;dmc=4&amp;adx=-12245933&amp;ady=-12245933&amp;biw=1355&amp;bih=641&amp;scr_x=0&amp;scr_y=0&amp;eid=31089715%2C31089915%2C31089905%2C95347432&amp;oid=2&amp;pvsid=1696649036844854&amp;tmod=348461301&amp;uas=0&amp;nvt=1&amp;fsapi=1&amp;ref=https%3A%2F%2Fwww.google.com%2F&amp;fc=1920&amp;brdim=0%2C0%2C0%2C0%2C1366%2C0%2C1366%2C728%2C1366%2C641&amp;vis=1&amp;rsz=%7C%7Cs%7C&amp;abl=NS&amp;fu=32768&amp;bc=31&amp;bz=1&amp;td=1&amp;tdf=2&amp;psd=W251bGwsbnVsbCxudWxsLDNd&amp;nt=1&amp;ifi=1&amp;uci=a!1&amp;fsb=1&amp;dtd=785" data-google-container-id="a!1" tabindex="0" title="Advertisement" aria-label="Advertisement" data-load-complete="true"></iframe></div></ins><script>
+    function switchTheme() {
+        const themeStyle = document.getElementById("theme-style");
+        const toggleIcon = document.getElementById("toggle-theme-icon");
+        const logo = document.getElementById("logo");
+    
+        if (themeStyle.getAttribute("href") === "https://signconverter.com/style/light.css") {
+            themeStyle.setAttribute("href", "https://signconverter.com/style/dark.css");
+            setCookie("theme", "dark", 30);
+            toggleIcon.innerHTML = nightIcon();
+            logo.src = "https://signconverter.com/assets/sign-language-converter-logo-dark.png";
+        } else {
+            themeStyle.setAttribute("href", "https://signconverter.com/style/light.css");
+            setCookie("theme", "light", 30);
+            toggleIcon.innerHTML = dayIcon();
+            logo.src = "https://signconverter.com/assets/sign-language-converter-logo.png";
+        }
+    }
+   
+    function setCookie(name, value, days) {
+        let expires = "";
+        if (days) {
+            const date = new Date();
+            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+            expires = "; expires=" + date.toUTCString();
+        }
+        document.cookie = name + "=" + (value || "") + expires + "; path=/";
+    }
+    
+    function dayIcon() {
+        return `<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.88 122.88"><title>Day mood</title><path d="M30,13.21A3.93,3.93,0,1,1,36.8,9.27L41.86,18A3.94,3.94,0,1,1,35.05,22L30,13.21Zm31.45,13A35.23,35.23,0,1,1,36.52,36.52,35.13,35.13,0,0,1,61.44,26.2ZM58.31,4A3.95,3.95,0,1,1,66.2,4V14.06a3.95,3.95,0,1,1-7.89,0V4ZM87.49,10.1A3.93,3.93,0,1,1,94.3,14l-5.06,8.76a3.93,3.93,0,1,1-6.81-3.92l5.06-8.75ZM109.67,30a3.93,3.93,0,1,1,3.94,6.81l-8.75,5.06a3.94,3.94,0,1,1-4-6.81L109.67,30Zm9.26,28.32a3.95,3.95,0,1,1,0,7.89H108.82a3.95,3.95,0,1,1,0-7.89Zm-6.15,29.18a3.93,3.93,0,1,1-3.91,6.81l-8.76-5.06A3.93,3.93,0,1,1,104,82.43l8.75,5.06ZM92.89,109.67a3.93,3.93,0,1,1-6.81,3.94L81,104.86a3.94,3.94,0,0,1,6.81-4l5.06,8.76Zm-28.32,9.26a3.95,3.95,0,1,1-7.89,0V108.82a3.95,3.95,0,1,1,7.89,0v10.11Zm-29.18-6.15a3.93,3.93,0,0,1-6.81-3.91l5.06-8.76A3.93,3.93,0,1,1,40.45,104l-5.06,8.75ZM13.21,92.89a3.93,3.93,0,1,1-3.94-6.81L18,81A3.94,3.94,0,1,1,22,87.83l-8.76,5.06ZM4,64.57a3.95,3.95,0,1,1,0-7.89H14.06a3.95,3.95,0,1,1,0,7.89ZM10.1,35.39A3.93,3.93,0,1,1,14,28.58l8.76,5.06a3.93,3.93,0,1,1-3.92,6.81L10.1,35.39Z"/></svg>`;
+    }
+    
+    function nightIcon() {
+        return `<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.88 122.89"><title>Night Mood</title><path d="M49.06,1.27c2.17-0.45,4.34-0.77,6.48-0.98c2.2-0.21,4.38-0.31,6.53-0.29c1.21,0.01,2.18,1,2.17,2.21c-0.01,0.93-0.6,1.72-1.42,2.03c-9.15,3.6-16.47,10.31-20.96,18.62c-4.42,8.17-6.1,17.88-4.09,27.68l0.01,0.07c2.29,11.06,8.83,20.15,17.58,25.91c8.74,5.76,19.67,8.18,30.73,5.92l0.07-0.01c7.96-1.65,14.89-5.49,20.3-10.78c5.6-5.47,9.56-12.48,11.33-20.16c0.27-1.18,1.45-1.91,2.62-1.64c0.89,0.21,1.53,0.93,1.67,1.78c2.64,16.2-1.35,32.07-10.06,44.71c-8.67,12.58-22.03,21.97-38.18,25.29c-16.62,3.42-33.05-0.22-46.18-8.86C14.52,104.1,4.69,90.45,1.27,73.83C-2.07,57.6,1.32,41.55,9.53,28.58C17.78,15.57,30.88,5.64,46.91,1.75c0.31-0.08,0.67-0.11,1.01-0.09C49.05,1.26,49.05,1.27,49.06,1.27z"/></svg>`;
+    }
+    
+    document.getElementById("toggle-theme-icon").addEventListener("click", switchTheme);
+    
+    document.addEventListener("DOMContentLoaded", function () {
+       
+        if (savedTheme === "dark") {
+            themeStyle.setAttribute("href", "https://signconverter.com/style/dark.css");
+            toggleIcon.innerHTML = nightIcon();
+            logo.src = "https://signconverter.com/assets/sign-language-converter-logo-dark.png";
+        } else {
+            themeStyle.setAttribute("href", "https://signconverter.com/style/light.css");
+            toggleIcon.innerHTML = dayIcon();
+            logo.src = "https://signconverter.com/assets/sign-language-converter-logo.png";
+        }
+    });
+    </script>
+    
+  
+    
+    
+    
+    
+   
+   
+   
+   

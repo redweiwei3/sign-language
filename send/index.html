@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Email Client</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Send Email</h1>
+        <div>
+            <label for="username">Email</label>
+            <input type="text" id="username" required>
+        </div><br>
+        <button id="send-email">Open Email Client</button>
+    </div>
+
+    <script>
+        document.getElementById('send-email').addEventListener('click', function() {
+            const recipient = "example@example.com"; // Replace with the recipient's email
+            const subject = "Hello from My Website"; // Replace with your subject
+            const body = "This is a test email sent from my website."; // Replace with your email body
+
+            // Create the mailto link
+            const mailtoLink = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+            // Open the email client
+            window.location.href = mailtoLink;
+        });
+    </script>
+</body>
+</html>
